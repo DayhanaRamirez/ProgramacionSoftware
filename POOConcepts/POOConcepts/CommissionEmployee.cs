@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace POOConcepts
+﻿namespace POOConcepts
 {
     public class CommissionEmployee : Employee
     {
@@ -20,7 +14,7 @@ namespace POOConcepts
         public override string ToString()
         {
             return $"{base.ToString()} " +
-                $"\n\tSales................: {$"{Sales:C2}", 18}" +
+                $"\n\tSales................: {$"{Sales:C2}",18}" +
                 $"\n\tCommission percentaje: {$"{CommissionPercentaje:P2}",18}" +
                 $"\n\tValue yo pay.........: {$"{GetValueToPay():C2}",18}";
         }
